@@ -178,15 +178,13 @@ section
 .slide {
     flex: 0 0 auto;
     scroll-snap-align: start;
-    width: 100%; /* Pastikan setiap slide memiliki lebar 100% dari container */
+    width: 30%;
 }
 
 .slide img {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
-
-
 
 
 /* Paket Styles */
@@ -209,8 +207,6 @@ section
 {
     transform: scale(1.05); /* Efek scaling saat hover */
 }
-
-
 
 .paket .box-container .box h3 {
     font-size: 2rem;
@@ -263,6 +259,7 @@ section
     max-width: 40%;
     padding: 1rem;
     order: 1; /* Mengubah urutan gambar menjadi sebelum teks pada layar kecil */
+    border-radius: 1rem;
 }
 
 .about .row .img {
@@ -498,7 +495,7 @@ section
     .about .row .image,
     .about .row .content 
     {
-        flex: 1 1 100%; /* Memastikan elemen memenuhi lebar layar pada layar kecil */
+        flex: 1 1 100%;
         max-width: 100%;
     }
 }
@@ -515,11 +512,15 @@ section
         padding: 1.5rem 2rem;
     }
 
-    .about .row .image,
-    .about .row .content 
+    .about .row .image img
     {
-        flex: 1 1 100%; /* Memastikan elemen memenuhi lebar layar pada layar kecil */
-        max-width: 100%; 
+        width: 100%;
+        height: auto;
+    }
+
+    .about .row .content
+    {
+        padding: 1rem;
     }
 }
 
