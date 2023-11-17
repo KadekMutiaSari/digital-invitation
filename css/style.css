@@ -1,13 +1,17 @@
-@import url('https://fonts.google.com/specimen/Poppins?preview.text=aptos&sort=popularity');
+/* Import font Poppins dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+/* Root Variables */
 :root
 {
-    --main-color: rgba(255, 201, 64, 0.837);
+    --main-color: rgb(202, 175, 20);
 }
+
+/* Global Styles */
 *{
     font-family: "Poppins", Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     outline: none;
     border: none;
@@ -16,14 +20,16 @@
     transition: .2s linear;
 }
 
+/* HTML Styles */
 html
 {
-    font-size: 62%;
+    font-size: 62%; /* Ukuran font 62% untuk responsivitas */
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
 }
 
+/* Scrollbar Styles */
 html::-webkit-scrollbar
 {
     width: 1rem;
@@ -31,118 +37,112 @@ html::-webkit-scrollbar
 
 html::-webkit-scrollbar-track
 {
-    background: black;
+    background: rgb(255, 255, 255);
 }
 
 html::-webkit-scrollbar-thumb
 {
-    background: var(--main-color);
+    background: lightgrey;
     border-radius: 5rem;
 }
 
+/* Body Styles */
 body
 {
     background-color: white;
 }
 
+
+/* Section Styles */
 section
 {
     padding: 2rem 9%;
 }
 
-/* timeline */
 .heading
 {
     text-align: center;
     padding-bottom: 2rem;
-    color: black;
+    color: rgb(255, 107, 131);
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .heading span
 {
-    color: var(--main-color);
+    color: black;
     text-transform: uppercase;
 }
-/* timeline */
 
-.btn
-{
-    margin-top: 1rem;
-    display: inline-block;
-    padding: .8rem 3rem;
-    font-size: 1.7rem;
-    border-radius: .5rem;
-    background: #444;
-    color: aliceblue;
-    cursor: pointer;
-    font-weight: 600px;
-}
 
-.btn:hover
-{
-    background: var(--main-color);
-    color: #444;
-}
-
+/* Header Styles */
 .header
 {
     position: fixed;
-    top:0px; left:0px; right:0px;
-    z-index: 10000px;
-    background: rgb(255, 27, 65);
+    top:0; left:0; right:0;
+    z-index: 10000;
+    background: rgb(255, 107, 131);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:1.5rem 9%;
+    padding:3rem 9%;
 }
 
+/* Logo Styles */
 .header .logo
 {
-    font-weight: bolder;
-    color: aliceblue;
-    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    font-size: 4rem;
 }
 
 .header .logo span
 {
-    color: var(--main-color);
-}
-
-.header .navbar .a
-{
-    font-size: 1.7rem;
-    color: aliceblue;
-    margin-left: 2rem;
-}
-
-.header .navbar .a:hover
-{
-    color: var(--main-color);
-}
-
-#menu-bars
-{
-    font-size: 3rem;
     color: black;
+}
+
+
+/* Navbar Styles */
+.header .navbar 
+{
+    display: flex;
+    align-items: center;
+}
+
+.header .navbar a 
+{
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 2rem;
+    transition: color 1s ease-in-out;
+}
+
+.header .navbar .a:hover 
+{
+    color: var(--main-color);
+}
+
+/* Menu Bars Styles */
+#menu-bars {
+    font-size: 3rem;
+    color: white;
     cursor: pointer;
     display: none;
 }
 
-
+/* Home Section Styles */
 .home .content
 {
     text-align: center;
     padding-top: 6rem;
-    margin: 2rem auto;
+    margin: 8rem auto;
     max-width: 70rem;
 }
 
 .home .content h3
 {
     color: black;
-    font-size: 4.5rem;
+    font-size: 4rem;
     text-transform: uppercase;
 }
 
@@ -152,195 +152,221 @@ section
     text-transform: uppercase;
 }
 
-.home .home-slider .swiper-slide
-{
-    overflow: hidden;
-    border-radius: 5rem;
-    height: 50rem;
-    width: 35rem;
+.slider-container {
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 }
 
-.home .home-slider .swiper-slide img
-{
-    height: 100%;
+.slide {
+    scroll-snap-align: start;
+}
+
+.slide img {
     width: 100%;
-    object-fit: cover;
+    height: auto;
 }
 
-/* timeline */
-.timeline .box-container
-{
+
+
+/* Paket Styles */
+.paket .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
-.timeline .box-container .box
-{
-    border-radius: .5rem;
+.paket .box-container .box {
+    position: relative;
+    border-radius: 0.5rem;
     background: aliceblue;
     text-align: center;
     padding: 2.5rem;
+    transition: transform 0.3s ease-in-out;
 }
 
-.timeline .box-container .box i
+.paket .box-container .box:hover 
+{
+    transform: scale(1.05); /* Efek scaling saat hover */
+}
+
+.paket .box-container .box i 
 {
     height: 6rem;
     width: 6rem;
     line-height: 6rem;
     border-radius: 50%;
     font-size: 2.5rem;
+    background: var(--main-color); 
+    color: rgb(255, 107, 131);
+    margin-bottom: 1rem;
+}
+
+.paket .box-container .box h3 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.paket .box-container .box p {
+    font-size: 1.6rem;
+    color: black;
+    line-height: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.paket .box .price {
+    display: block;
+    font-size: 1.8rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.paket .box .btn-pesan {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    background: #444;
+    color: aliceblue;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.paket .box .btn-pesan:hover {
     background: var(--main-color);
-    color: palevioletred;
+    color: #444;
 }
 
-.timeline .box-container .box h3
-{
-    font-size: 2rem;
-    color: black;
-    padding: 1rem 0px;
-}
 
-.timeline .box-container .box p
-{
-    font-size: 2rem;
-    color: black;
-    line-height: 1.8rem;
-    
-}
-/* timeline */
-
-
-
-/* batas awal about */
-.about .row
-{
+/* About Section Styles */
+.about .row {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.about .row .image
-{
-    flex: 1 1 45rem;
+.about .row .image {
+    flex: 1 1 100%; /* Memastikan gambar memenuhi lebar layar pada layar kecil */
     padding: 1rem;
+    order: 1; /* Mengubah urutan gambar menjadi sebelum teks pada layar kecil */
 }
 
-.about .row .img
-{
-    width: 100%;
+.about .row .img {
+    width: 50%;
+    max-width: 100%; /* Menambahkan batas maksimum lebar gambar */
+    height: auto; /* Menjaga aspek rasio gambar */
     border-radius: .5rem;
     border: 1rem solid aliceblue;
 }
 
-.about .row .content
-{
-    flex: 1 1 45rem;
+.about .row .content {
+    flex: 1 1 100%; /* Memastikan teks memenuhi lebar layar pada layar kecil */
+    order: 2; /* Mengubah urutan teks menjadi setelah gambar pada layar kecil */
 }
 
-.about .row .content h3
-{
-    font-size: 3.5rem;
+.about .row .content h3 {
+    font-size: 2rem;
     color: black;
 }
 
-.about .row .content p
-{
-    font-size: 3.5rem;
+.about .row .content p {
+    font-size: 1.5rem;
     color: black;
-    padding: 1rem 0px;
+    padding: 1rem 0;
     line-height: 2rem;
 }
 
-/* batas akhir about */
 
 
 
-/* batas awal CONTACT */
-.contact form
+/* Hubungi Section Styles */
+.hubungi form
 {
-    max-width: 70rem;
+    max-width: 60rem;
     margin: 1rem auto;
     text-align: center;
 }
 
-.contact form .inputBox
+.hubungi form .inputBox
 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.contact form .inputBox input,
-.contact form textarea
+.hubungi form .inputBox input,
+.hubungi form textarea
 {
     width: 100%;
     background: aliceblue;
     border-radius: .5rem;
     padding: 1rem;
-    margin: 7rem 0px;
+    margin: .5rem 0;
     font-size: 1.5rem;
     color: black;
     text-transform: none;
 }
 
-.contact form .inputBox input::placeholder,
-.contact form textarea::placeholder
+.hubungi form .inputBox input::placeholder,
+.hubungi form textarea::placeholder
 {
    color: black; 
    text-transform: capitalize;
 }
 
-.contact form .inputBox input:focus,
-.contact form textarea:focus
+.hubungi form .inputBox input:focus,
+.hubungi form textarea:focus
 {
    color: black; 
 }
 
-.contact form .inputBox input
+.hubungi form .inputBox input
 {
     width: 49%;
 }
 
-.contact form textarea
+.hubungi form textarea
 {
     resize: none;
+    columns: 15;
 }
 
-.contact form .inputBox input
+.hubungi form .inputBox input
 {
     width: 100%;
 }
-/* batas akhir CONTACT */
 
 
-/* batas awal FOOTER */
+/* Footer Section Styles */
 .footer
 {
-    background: rgb(255, 27, 65);
+    background: aliceblue;
 }
 
 .footer .box-container
 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    gap: .5rem;
 }
 
 .footer .box-container .box h3
 {
-    font-size: 2.5rem;
-    color: aliceblue;
-    padding: 1rem 0px;
+    font-size: 2rem;
+    color: black;
+    padding: .2rem 0;
 }
 
 .footer .box-container .box a
 {
-    display: block;
+    display: flex;
     font-size: 1.5rem;
-    padding: 1rem 0px;
-    color: aliceblue;
+    padding: .5rem 0;
+    color: rgb(255, 107, 131);
 }
 
 .footer .box-container .box a i
@@ -352,31 +378,27 @@ section
 .footer .box-container .box a:hover i
 {
     padding-right: 1.5rem;
-    color: black;
 }
 
 .footer .credit
 {
     text-align: center;
-    padding: 1rem solid aliceblue;
-    color: rgb(255, 255, 255);
+    padding: 1rem;
+    color: rgb(0, 0, 0);
     padding: 2rem;
-    padding-top: 2.5rem;
-    margin-top: 1rem;
-    font-size: 1rem;
+    padding-top: .5rem;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .footer .credit span
 {
-    color: var(--main-color);
+    color: rgb(255, 107, 131);
 }
-/* batas akhir FOOTER */
 
 
 
-
-/* media queries */
-
+/* Media Queries */
 @media (max-width: 991px)
 {
     html
@@ -393,37 +415,36 @@ section
     {
         padding: 2rem;
     }
-}
 
-@media (max-width: 768px)
-{
-    #menu-bars
-    {
+    #menu-bars {
         display: initial;
     }
 
-    .header .navbar
-    {
+    .header .navbar {
         position: absolute;
-        top:100%; left:0px; right:0px;
+        top: 100%;
+        left: 0;
+        right: 0;
         border-top: .1rem solid aliceblue;
         background: rgb(180, 130, 65);
-        clip-path: polygon(0px 0px, 100% 0px, 100% 0px, 0px 0px);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
     }
 
-    .header .navbar a
-    {
-        display: flex;
+    .header .navbar a {
         background: aliceblue;
         border-radius: .5rem;
         padding: 1.3rem;
         margin: 1.3rem;
         font-size: 2rem;
+        color: white;
     }
 
     .header .navbar.active
     {
-        clip-path: polygon(0px 0px, 100% 0px, 100% 0px, 0px 0px);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
     .fa-times
@@ -441,25 +462,19 @@ section
         font-size: 2rem;
     }
 
-    .home .content h3;
+    .home .content h3
     {
         font-size: 4rem;
     }
 }
 
-@media (max-width: 450)
+@media (max-width: 450px)
 {
-    
     html
     {
         font-size: 50%;
     }
 
-    .home .home-slider .swiper-slide
-    {
-        height: 27rem;
-    }
-    
     .header
     {
         padding: 1.5rem 2rem;
