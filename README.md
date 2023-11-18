@@ -52,27 +52,32 @@ Dokumentasi dari web yang sudah dibuat:
    Dibuat dengan code html: https://github.com/KadekMutiaSari/uts-webpro/issues/21#issue-2000239309
   	Dibuat dengan code css: https://github.com/KadekMutiaSari/uts-webpro/issues/22#issue-2000239477
  	 	 
-10.	Membuat footer section yang berisi kontak, sosial media dan credit, bagian isi kontak kami dan media sosial akan bereaksi jika dikenai kursor
-   Dengan code html:
-  	Dengan code css:
+8. Membuat footer section yang berisi kontak, sosial media dan credit, bagian isi kontak kami dan media sosial akan bereaksi jika dikenai kursor
+   https://github.com/KadekMutiaSari/uts-webpro/issues/24#issue-2000245695
+   Dengan code html: https://github.com/KadekMutiaSari/uts-webpro/issues/25#issue-2000246555
+  	Dengan code css: https://github.com/KadekMutiaSari/uts-webpro/issues/26#issue-2000247654
   
 
-11.	Membuat custom css file link pada bagian head html
+9.	Membuat custom css file link pada bagian head html
+    https://github.com/KadekMutiaSari/uts-webpro/issues/27#issue-2000248695
  
 
-12.	Membuat custom js link pada bagian body html
+10.	Membuat custom js link pada bagian body html
+    https://github.com/KadekMutiaSari/uts-webpro/issues/28#issue-2000249810
  
 
-13.	Penggunaan metode dalam kelas, didalamnya juga berisi constructor, dimana variabelnya adalah menu dan navbar
- 
+11.	Penggunaan metode dalam kelas, didalamnya juga berisi constructor, dimana variabelnya adalah menu dan navbar
+    https://github.com/KadekMutiaSari/uts-webpro/issues/29#issue-2000250590
 
-14.	Penggunaan konstruktor kembali
- 
+12.	Penggunaan konstruktor kembali
+    https://github.com/KadekMutiaSari/uts-webpro/issues/30#issue-2000250915
 
-15.	Membuat media queries supaya web menjadi responsive
+13.	Membuat media queries supaya web menjadi responsive
+    https://github.com/KadekMutiaSari/uts-webpro/issues/31#issue-2000251907
  	 
 
-16.	Hasil dari settingan yang responsive
+14.	Hasil dari settingan yang responsive
+    https://github.com/KadekMutiaSari/uts-webpro/issues/32#issue-2000252490
  	 	 	 
 
 
