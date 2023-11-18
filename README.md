@@ -47,36 +47,41 @@ Dokumentasi dari web yang sudah dibuat:
   	Dibuat dengan code html berikut: https://github.com/KadekMutiaSari/uts-webpro/issues/18#issue-2000238060
   	Dibuat dengan code css berikut: https://github.com/KadekMutiaSari/uts-webpro/issues/19#issue-2000238352
 
-7.	Membuat section hubungi kami untuk mendapatkan pesan berupa komentar maupun pertanyaan dari user, serta button kirim pesan.
+7. Membuat section tentang kami yang menjelaskan tentang fungsi web ini
+   https://github.com/KadekMutiaSari/uts-webpro/issues/35#issue-2000260214
+   Dibuat dengan code html: https://github.com/KadekMutiaSari/uts-webpro/issues/36#issue-2000261054
+   Dibuat dengan code css: https://github.com/KadekMutiaSari/uts-webpro/issues/37#issue-2000261322
+
+8.	Membuat section hubungi kami untuk mendapatkan pesan berupa komentar maupun pertanyaan dari user, serta button kirim pesan.
    https://github.com/KadekMutiaSari/uts-webpro/issues/20#issue-2000238964
    Dibuat dengan code html: https://github.com/KadekMutiaSari/uts-webpro/issues/21#issue-2000239309
   	Dibuat dengan code css: https://github.com/KadekMutiaSari/uts-webpro/issues/22#issue-2000239477
  	 	 
-8. Membuat footer section yang berisi kontak, sosial media dan credit, bagian isi kontak kami dan media sosial akan bereaksi jika dikenai kursor
+9. Membuat footer section yang berisi kontak, sosial media dan credit, bagian isi kontak kami dan media sosial akan bereaksi jika dikenai kursor
    https://github.com/KadekMutiaSari/uts-webpro/issues/24#issue-2000245695
    Dengan code html: https://github.com/KadekMutiaSari/uts-webpro/issues/25#issue-2000246555
   	Dengan code css: https://github.com/KadekMutiaSari/uts-webpro/issues/26#issue-2000247654
   
 
-9.	Membuat custom css file link pada bagian head html
+10.	Membuat custom css file link pada bagian head html
     https://github.com/KadekMutiaSari/uts-webpro/issues/27#issue-2000248695
  
 
-10.	Membuat custom js link pada bagian body html
+11.	Membuat custom js link pada bagian body html
     https://github.com/KadekMutiaSari/uts-webpro/issues/28#issue-2000249810
  
 
-11.	Penggunaan metode dalam kelas, didalamnya juga berisi constructor, dimana variabelnya adalah menu dan navbar
+12.	Penggunaan metode dalam kelas, didalamnya juga berisi constructor, dimana variabelnya adalah menu dan navbar
     https://github.com/KadekMutiaSari/uts-webpro/issues/29#issue-2000250590
 
-12.	Penggunaan konstruktor kembali
+13.	Penggunaan konstruktor kembali
     https://github.com/KadekMutiaSari/uts-webpro/issues/30#issue-2000250915
 
-13.	Membuat media queries supaya web menjadi responsive
+14.	Membuat media queries supaya web menjadi responsive
     https://github.com/KadekMutiaSari/uts-webpro/issues/31#issue-2000251907
  	 
 
-14.	Hasil dari settingan yang responsive
+15.	Hasil dari settingan yang responsive
     https://github.com/KadekMutiaSari/uts-webpro/issues/32#issue-2000252490
  	 	 	 
 
