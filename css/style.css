@@ -151,7 +151,8 @@ section
     text-transform: uppercase;
 }
 
-.home .content .btn {
+.home .content .btn 
+{
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 1.6rem;
@@ -164,37 +165,43 @@ section
     margin-top: 5rem;
 }
 
-.home .content .btn:hover {
+.home .content .btn:hover 
+{
     background-color: var(--main-color);
     color: white;
 }
 
-.slider-container {
+.slider-container 
+{
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
 }
 
-.slide {
+.slide 
+{
     flex: 0 0 auto;
     scroll-snap-align: start;
     width: 30%;
 }
 
-.slide img {
+.slide img 
+{
     width: 90%;
     height: auto;
 }
 
 
 /* Paket Styles */
-.paket .box-container {
+.paket .box-container 
+{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
-.paket .box-container .box {
+.paket .box-container .box 
+{
     position: relative;
     border-radius: 0.5rem;
     background: aliceblue;
@@ -208,20 +215,23 @@ section
     transform: scale(1.05); /* Efek scaling saat hover */
 }
 
-.paket .box-container .box h3 {
+.paket .box-container .box h3 
+{
     font-size: 2rem;
     color: black;
     margin-bottom: 1rem;
 }
 
-.paket .box-container .box p {
+.paket .box-container .box p 
+{
     font-size: 1.6rem;
     color: black;
     line-height: 2rem;
     margin-bottom: 1.5rem;
 }
 
-.paket .box .price {
+.paket .box .price 
+{
     display: block;
     font-size: 1.8rem;
     color: black;
@@ -229,7 +239,8 @@ section
     margin-bottom: 1rem;
 }
 
-.paket .box .btn-pesan {
+.paket .box .btn-pesan 
+{
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 1.6rem;
@@ -241,52 +252,58 @@ section
     text-decoration: none;
 }
 
-.paket .box .btn-pesan:hover {
+.paket .box .btn-pesan:hover 
+{
     background: var(--main-color);
     color: #444;
 }
 
 
 /* About Section Styles */
-.about .row {
+.about .row 
+{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-.about .row .image {
-    flex: 1 1 40%;
-    max-width: 40%;
+.about .row .image 
+{
+    flex: 40%;
     padding: 1rem;
     order: 1; /* Mengubah urutan gambar menjadi sebelum teks pada layar kecil */
     border-radius: 1rem;
 }
-
-.about .row .img {
+  
+.about .row .img 
+{
     width: 40%;
     height: auto; /* Menjaga aspek rasio gambar */
     border-radius: 1rem;
     border: 1rem solid aliceblue;
 }
-
-.about .row .content {
-    flex: 1 1 40%; /* Memastikan teks memenuhi lebar layar pada layar kecil */
+  
+.about .row .content 
+{
+    flex: 50%; /* Memastikan teks memenuhi lebar layar pada layar kecil */
     order: 2; /* Mengubah urutan teks menjadi setelah gambar pada layar kecil */
+    margin-top: 70px;
+    text-align: justify;
 }
 
-.about .row .content h3 {
+.about .row .content h3 
+{
     font-size: 2rem;
     color: black;
 }
 
-.about .row .content p {
+.about .row .content p 
+{
     font-size: 1.5rem;
     color: black;
     padding: .5rem;
     line-height: 2rem;
 }
-
-
 
 
 /* Hubungi Section Styles */
@@ -362,8 +379,6 @@ section
     background-color: var(--main-color); 
     color: white; 
 }
-
-
 
 
 /* Footer Section Styles */
