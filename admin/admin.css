@@ -1,0 +1,71 @@
+/* Import font Poppins dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 10px;
+}
+
+h2 {
+    text-align: center; 
+    margin-top: 10px; 
+    padding: 10px; 
+    background-color: rgb(202, 175, 20);
+    background-size: contain;
+}
+
+section {
+    display: flex;
+    min-height: 100vh; /* Menjamin bahwa section akan memenuhi setidaknya tinggi viewport (100% dari viewport height) */
+}
+
+nav {
+    flex: 0.5;
+    background: #ef6767;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: white;
+    color: #ef6767;
+}
+
+article {
+    flex: 3;
+    padding: 20px;
+}
+
+/* footer {
+    background-color: aliceblue;
+    padding: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: auto; /* Menjamin footer akan selalu ada di bawah halaman */
+}
+
+.credit span {
+    font-weight: bold;
+} */
