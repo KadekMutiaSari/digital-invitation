@@ -1,5 +1,5 @@
 <?php
-require_once 'dbconfig.php';
+require_once 'dbconfig/dbconfig.php';
 class Pelanggan
 {
 	private $pdo;
@@ -38,4 +38,12 @@ class Pelanggan
 			return false;
 		}
 	}
+
+	// Method for getting all pelanggan
+	public function getAllPelanggan()
+    {
+        $stmt = $this->pdo->query("SELECT * FROM pelanggan");
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 }
