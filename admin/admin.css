@@ -12,15 +12,15 @@ body {
 }
 
 header {
+    background-color: aliceblue;
     padding: 10px;
 }
 
 h2 {
-    text-align: center; 
-    margin-top: 10px; 
-    padding: 10px; 
-    background-color: rgb(202, 175, 20);
-    background-size: contain;
+    text-align: center;
+    margin: 0; 
+    padding: 20px;
+    color: black;
 }
 
 section {
@@ -58,9 +58,34 @@ article {
     padding: 20px;
 }
 
-/* footer {
+.admin-table {
+    width: 100%;
+}
+
+.admin-table th, .admin-table td {
+    border: 1px solid #ef6767;
+    text-align: left;
+    padding: 12px; /* Adjusted padding for better spacing */
+}
+
+.admin-table th {
+    background-color: #ef6767;
+    color: white;
+    text-align: center;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.admin-table .harga{
+    text-align: right;
+}
+
+
+footer {
     background-color: aliceblue;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     color: rgb(0, 0, 0);
     margin-top: auto; /* Menjamin footer akan selalu ada di bawah halaman */
@@ -68,4 +93,67 @@ article {
 
 .credit span {
     font-weight: bold;
-} */
+}
+
+/* Add styles for buttons */
+.button {
+    background-color: #ef6767;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: #ef6767;
+}
+
+
+/* Media Query */
+@media (max-width: 767px) {
+    body {
+        padding: 10px;
+    }
+
+    nav {
+        flex: 1;
+    }
+
+    article {
+        flex: 2;
+    }
+
+    .admin-table th, .admin-table td {
+        padding: 8px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    nav {
+        flex: 0;
+    }
+
+    article {
+        flex: 1;
+    }
+
+    .admin-table th, .admin-table td {
+        padding: 6px;
+    }
+
+    .button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
