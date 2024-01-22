@@ -14,13 +14,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])){
         $authenticated_user = $pelanggan->authenticate($email_pelanggan, $password_pelanggan);
         if ($authenticated_user) {
             $_SESSION['loggedin'] = true;
+            $_SESSION['id_pelanggan'] = $authenticated_user['id_pelanggan'];
+            $_SESSION['nama_pelanggan'] = $authenticated_user['nama_pelanggan'];
             $_SESSION['email_pelanggan'] = $authenticated_user['email_pelanggan'];
             setcookie('email_pelanggan', $authenticated_user['email_pelanggan'], time() + 3600);
-            header("Location: pesanan.php");
+            header("Location: pesan.php");
             exit();
         } else {
             // Login failed
-            $error = "Your email_pelanggan/password_pelanggan combination was incorrect";
+            $error = "Your email/password combination was incorrect";
         }
     }
 }
@@ -32,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>        
     <link rel="icon" type="image/x-icon" href="images/di_icon.png"> 	<!-- logo icon -->
-    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="input.css">
 </head>
 <body>
 <h2>Login</h2><br>
@@ -47,8 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["login"])){
         <input type="submit" name="login" value="Login">
     </form>
 
-    <p><b>Don't have an account? </b></p>
-	<p><a href="register.php"><button>Register here</button></a></p><br>
+    <p>Don't have an account? <a href="register.php"><b>Register here</b></a></p>
     <?php if (isset($error)): ?>
         <p><?php echo $error; ?></p>
     <?php endif; ?>
