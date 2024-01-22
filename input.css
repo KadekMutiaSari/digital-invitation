@@ -1,11 +1,6 @@
 /* Import font Poppins dari Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-/* Root Variables */
-:root
-{
-    --main-color: rgb(202, 175, 20);
-}
 
 /* Global Styles */
 *{
@@ -29,7 +24,7 @@ h2 {
     font-size: 3.5rem;
     text-align: center;
     color: #333;
-    margin-bottom: 10px; /* Menambahkan margin ke bawah */
+    margin-bottom: 5px;
 }
 
 .container {
@@ -43,7 +38,7 @@ h2 {
 
 
 form {
-    padding: 20px;
+    padding: 15px;
 }
 
 form input {
@@ -68,7 +63,6 @@ form input[type="submit"]:hover {
 
 p {
     text-align: center;
-    margin-top: 15px;
     font-size: 1rem;
 }
 
@@ -79,7 +73,8 @@ button {
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
-    position: center;
+    justify-content: center;
+    display: flex;
 }
 
 button:hover {
