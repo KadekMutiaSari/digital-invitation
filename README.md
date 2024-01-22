@@ -44,3 +44,38 @@ HALAMAN UNTUK USER
    Halaman ini tampil setelah pelanggan berhasil login.
    Pelanggan dapat memilih pesanan yang ada dan harga akan otomatis muncul.
    Data Pesanan langsung masuk ke database.
+
+
+HALAMAN ADMIN
+1. Halaman login khusus admin
+   ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/a385a80b-10a8-45b9-a28d-80dd8bfcf5b3)
+   Hanya admin yang sudah ditentukan yang dapat aksek halaman admin.
+
+2. Halaman Admin
+   ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/0997a1a1-03c0-4c84-9861-2afe5d856f2d)
+   Halaman dimana admin dapat melihat data-data pada database yang dibuat semantik.
+
+3. Halaman Data Admin
+   ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/38ee6759-5081-4474-a088-8c535f0bf2f9)
+   Menampilkan seluruh admin beserta datanya.
+
+4. Halaman Data Paket
+   ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/6ffd5a24-69a5-4a8b-b462-e8ce7790927e)
+   Menampilkan seluruh paket yang ada beserta datanya.
+   
+5. Halaman Data Pelanggan
+   ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/f17fd384-117d-459d-9067-c1ba0a89b190)
+   Menampilkan seluruh pelanggan yang sudah teregister beserta datanya.
+
+6. Halaman Data Pesanan
+   ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/567f63f1-bf12-497e-a403-a20f57692ecd)
+   ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/04b2efde-a5d6-4f58-a443-2ccee93a2f54)
+   Menampilkan seluruh pesanan yang masuk beserta informasi pendukung seperti waktu pemesanan.
+   Pada bagian status pesanan juga dapat di update oleh admin antara: pending, diproses dan selesai.
+
+
+
+
+
+
+
