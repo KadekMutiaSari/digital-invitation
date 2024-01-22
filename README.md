@@ -1,91 +1,46 @@
-# uts-webpro
-Front-End Website dengan HTML, CSS, dan Javascript
+# Digital Invitation Web
+Website Pemesanan untuk Undangan Digital
 
-## Tema
-Tema dari website ini adalah "Elegansi Digital" yang menekankan konsep modern dalam pembuatan undangan digital untuk berbagai jenis acara. Didesain untuk membantu pengguna dengan memberikan pengalaman yang praktis dan memberikan kesan modern.
+## Tema Website
+Tema dari website ini adalah "Elegansi Digital" yang menekankan konsep modern dalam pemesanan undangan digital. Didesain untuk membantu pelanggan dengan memberikan pengalaman yang praktis dan memberikan kesan modern.
 
-User yang ditargetkan adalah siapa pun yang ingin membuat undangan untuk berbagai jenis acara, seperti pernikahan, ulang tahun, pesta, dan lain-lain. Harga yang ditawarkan disesuaikan dengan paket-paket yang tersedia, memberikan fleksibilitas kepada pengguna untuk memilih sesuai dengan kebutuhan dan anggaran mereka.
+User yang ditargetkan adalah berbagai kalangan yang ingin membuat undangan untuk berbagai jenis acara, seperti pernikahan, ulang tahun, pesta, dan lain-lain. Harga yang ditawarkan disesuaikan dengan paket-paket yang tersedia, memberikan fleksibilitas kepada pengguna untuk memilih sesuai dengan kebutuhan dan anggaran mereka.
 
-## Harapan
+## Harapan UX
 Harapan terhadap pengalaman user ketika mengakses web, antara lain:
 1. Desain antarmuka pengguna (UI) website sudah intuitif, memungkinkan pengguna dengan mudah menjelajahi berbagai fitur dan opsi yang ditawarkan tanpa kebingungan. Mencakup navigasi yang jelas dan pemahaman yang cepat tentang cara menggunakan platform.
 2. Website dapat memberikan pengalaman yang konsisten dan responsif di berbagai jenis perangkat, termasuk komputer desktop, tablet, dan ponsel. 
-3. User merasa dapat memberikan komentar atau pertanyaan untuk membantu mereka dalam mengatasi masalah atau pertanyaan. 
-4. Pengguna dapat dengan mudah memahami berbagai paket layanan yang ditawarkan, beserta harga dan fitur yang termasuk di dalamnya. Tentunya segera memilih paket yang tersedia.
-5. Berharap untuk menerima umpan balik dari pengguna guna terus meningkatkan pengalaman pengguna.
+3. Pengguna dapat dengan mudah memahami berbagai paket layanan yang ditawarkan, beserta harga dan fitur yang termasuk di dalamnya. Tentunya segera memilih paket yang tersedia.
+4. Pengguna akan datang kembali untuk melakukan pemesanan lainnya.
 
-## Dokumentasi
+## Dokumentasi Website
 Dokumentasi dari web yang sudah dibuat:
-1. Membuat tab browser memiliki ikon dan judul
-   https://github.com/KadekMutiaSari/uts-webpro/issues/4#issue-2000229368
-   dengan code html sebagai berikut: https://github.com/KadekMutiaSari/uts-webpro/issues/5#issue-2000231748
-   Ikon didesain dan diunduh dari Favicon.
 
+HALAMAN UNTUK USER
+1. Tampilan awal web
+   ![Screenshot (941)](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/0c0b7d0e-1710-4d88-a33d-28011a258d36)
+   Disini tab browser tampil dengan icon berinisial DI.
+   Terdapat nama web, navigation bar, button untuk memesan dengan login terlebih dahulu, dan show beberapa produk yang dapat di slide.
 
-2. Membuat header dan navigation bar
-   https://github.com/KadekMutiaSari/uts-webpro/issues/6#issue-2000232052
-   Dibuat dengan code html berikut: https://github.com/KadekMutiaSari/uts-webpro/issues/7#issue-2000232877
-   Font keseluruhan menggunakan style Poppins dari Google Font.
+2. Tampilan Menu Paket
+   ![Screenshot (942)](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/afa2adfb-b10e-45dc-bbe0-67d3518ad55d)
+   Disini terdapat berbagi pilihan paket dengan spesifikasi dan harga yang berbeda.
+   Box paket dan tombol pesanan akan bereaksi saat ada pointer.
 
-3. Membuat bagian menu bereaksi ketika dikenai oleh kursor
-   https://github.com/KadekMutiaSari/uts-webpro/issues/8#issue-2000233428
-   Dibuat dengan code css berikut: https://github.com/KadekMutiaSari/uts-webpro/issues/9#issue-2000234899
-   
+3. Tampilan Menu Tentang Kami
+   ![Screenshot (945)](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/0a2ea995-9b0e-47bf-9771-84ebf6d98256)
+   Berisi logo dan deskripsi tentang Digital Invitation.
 
-4. Membuat bagian pembuka (home section) dan button awal yang juga bereaksi ketika diarahkan oleh kursor. Bagian <h3> berisi span yang membuat ada 2 warna berbeda.
-   https://github.com/KadekMutiaSari/uts-webpro/issues/10#issue-2000235259
-   Dengan code html berikut: https://github.com/KadekMutiaSari/uts-webpro/issues/11#issue-2000235524
-   Dengan code css berikut: https://github.com/KadekMutiaSari/uts-webpro/issues/12#issue-2000235725
- 
-5.	Membuat slide dengan 5 gambar yang masih pada home section.
-   https://github.com/KadekMutiaSari/uts-webpro/issues/13#issue-2000235979
-   Kelima gambar diperoleh dari Freepik
-  	Dengan code html berikut: https://github.com/KadekMutiaSari/uts-webpro/issues/14#issue-2000236331
-  	Dengan code css berikut: https://github.com/KadekMutiaSari/uts-webpro/issues/15#issue-2000236499
+4. Halaman Register Pelanggan
+   ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/f90db298-664e-4c9f-bab6-b45b3072f7c0)
+   Halaman ini akan tampil ketika pelanggan klik menu register di navigation bar.
 
-6.	Membuat section paket yang berisikan 6 pilihan paket sebagai konten utama
-   https://github.com/KadekMutiaSari/uts-webpro/issues/16#issue-2000236945
-   Box akan membesar jika dikenaik kursor, dan button nya akan berubah warn ajika dikenai kursor.
-  	https://github.com/KadekMutiaSari/uts-webpro/issues/17#issue-2000237308
-  	Dibuat dengan code html berikut: https://github.com/KadekMutiaSari/uts-webpro/issues/18#issue-2000238060
-  	Dibuat dengan code css berikut: https://github.com/KadekMutiaSari/uts-webpro/issues/19#issue-2000238352
+5. Halaman Login Pelanggan
+   ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/303eb48b-764f-4d85-8242-6e6f43196263)
+   Halaman ini akan tampil jika pelanggan klik menu login di navigation bar atau saat klik button "Pesan Sekarang".
 
-7. Membuat section tentang kami yang menjelaskan tentang fungsi web ini
-   https://github.com/KadekMutiaSari/uts-webpro/issues/35#issue-2000260214
-   Dibuat dengan code html: https://github.com/KadekMutiaSari/uts-webpro/issues/36#issue-2000261054
-   Dibuat dengan code css: https://github.com/KadekMutiaSari/uts-webpro/issues/37#issue-2000261322
-
-8.	Membuat section hubungi kami untuk mendapatkan pesan berupa komentar maupun pertanyaan dari user, serta button kirim pesan.
-   https://github.com/KadekMutiaSari/uts-webpro/issues/20#issue-2000238964
-   Dibuat dengan code html: https://github.com/KadekMutiaSari/uts-webpro/issues/21#issue-2000239309
-  	Dibuat dengan code css: https://github.com/KadekMutiaSari/uts-webpro/issues/22#issue-2000239477
- 	 	 
-9. Membuat footer section yang berisi kontak, sosial media dan credit, bagian isi kontak kami dan media sosial akan bereaksi jika dikenai kursor
-   https://github.com/KadekMutiaSari/uts-webpro/issues/24#issue-2000245695
-   Dengan code html: https://github.com/KadekMutiaSari/uts-webpro/issues/25#issue-2000246555
-  	Dengan code css: https://github.com/KadekMutiaSari/uts-webpro/issues/26#issue-2000247654
-  
-
-10.	Membuat custom css file link pada bagian head html
-    https://github.com/KadekMutiaSari/uts-webpro/issues/27#issue-2000248695
- 
-
-11.	Membuat custom js link pada bagian body html
-    https://github.com/KadekMutiaSari/uts-webpro/issues/28#issue-2000249810
- 
-
-12.	Penggunaan metode dalam kelas, didalamnya juga berisi constructor, dimana variabelnya adalah menu dan navbar
-    https://github.com/KadekMutiaSari/uts-webpro/issues/29#issue-2000250590
-
-13.	Penggunaan konstruktor kembali
-    https://github.com/KadekMutiaSari/uts-webpro/issues/30#issue-2000250915
-
-14.	Membuat media queries supaya web menjadi responsive
-    https://github.com/KadekMutiaSari/uts-webpro/issues/31#issue-2000251907
- 	 
-
-15.	Hasil dari settingan yang responsive
-    https://github.com/KadekMutiaSari/uts-webpro/issues/32#issue-2000252490
- 	 	 	 
-
-
+6. Halaman Pemesanan Paket
+   ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/a9c68bce-5205-45ed-ab1d-e0ef3ddfcfca)
+   Halaman ini tampil setelah pelanggan berhasil login.
+   Pelanggan dapat memilih pesanan yang ada dan harga akan otomatis muncul.
+   Data Pesanan langsung masuk ke database.
