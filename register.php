@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 require_once 'Pelanggan.php';
 
 
@@ -15,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register"]))
     {
         $reg_user->registerPelanggan($nama_pelanggan, $email_pelanggan, $password_pelanggan, $no_hp_pelanggan);
         header("Location: login.php");
-        exit(); // Stop the script from executing any further
+        exit();
     }
 }
 ?>
@@ -23,8 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register"]))
 <html>
 <head>
     <title>Register User</title>
-    <link rel="icon" type="image/x-icon" href="images/di_icon.png"> 	<!-- logo icon -->
-    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="icon" type="image/x-icon" href="images/di_icon.png">
+    <link rel="stylesheet" type="text/css" href="input.css">
 </head>
 <body>
 
@@ -32,13 +33,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register"]))
 
 <div class="container">
 <form method="post">
-
-    <input type="text" name="nama_pelanggan" placeholder="Username">
-    <input type="email" name="email_pelanggan" placeholder="Email">
-    <input type="text" name="password_pelanggan" placeholder="Password">
-    <input type="text" name="no_hp_pelanggan" placeholder="No Handphone">
+    Username: <input type="text" name="nama_pelanggan">
+    Email: <input type="email" name="email_pelanggan">
+    Password: <input type="text" name="password_pelanggan">
+    No Hp: <input type="text" name="no_hp_pelanggan">
     <input type="submit" name="register" value="Register"> 
-    <!-- pastikan name register diatas sama dengan isset post, sama2 "register" -->
+    <!-- pastikan name register diatas sama dengan isset post, sama2 "register" -->   
 </form>
 </div>
 </body>
