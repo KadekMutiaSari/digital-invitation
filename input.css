@@ -75,6 +75,21 @@ button {
     cursor: pointer;
     justify-content: center;
     display: flex;
+    text-decoration: none;
+}
+
+.container a {
+    background-color: rgb(255, 107, 131);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    width: 80%;
+    margin: auto;
 }
 
 button:hover {
