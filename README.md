@@ -1,25 +1,26 @@
 # Digital Invitation Web
 Website Pemesanan untuk Undangan Digital
-
+<br><br>
 
 ## Tema Website
 Tema dari website ini adalah "Elegansi Digital" yang menekankan konsep modern dalam pemesanan undangan digital. Didesain untuk membantu pelanggan dengan memberikan pengalaman yang praktis dan memberikan kesan modern.
 
 User yang ditargetkan adalah berbagai kalangan yang ingin membuat undangan untuk berbagai jenis acara, seperti pernikahan, ulang tahun, pesta, dan lain-lain. Harga yang ditawarkan disesuaikan dengan paket-paket yang tersedia, memberikan fleksibilitas kepada pengguna untuk memilih sesuai dengan kebutuhan dan anggaran mereka.
-
+<br><br>
 
 ## Harapan UX
 Harapan terhadap pengalaman user ketika mengakses web, antara lain:
 1. Desain antarmuka pengguna (UI) website sudah intuitif, memungkinkan pengguna dengan mudah menjelajahi berbagai fitur dan opsi yang ditawarkan tanpa kebingungan. Mencakup navigasi yang jelas dan pemahaman yang cepat tentang cara menggunakan platform.
 2. Website dapat memberikan pengalaman yang konsisten dan responsif di berbagai jenis perangkat, termasuk komputer desktop, tablet, dan ponsel. 
 3. Pengguna dapat dengan mudah memahami berbagai paket layanan yang ditawarkan, beserta harga dan fitur yang termasuk di dalamnya. Tentunya segera memilih paket yang tersedia.
-4. Pengguna akan datang kembali untuk melakukan pemesanan lainnya.
-
+4. Pengguna dapat berkomunikasi dengan Admin saat selesai melakukan pesanan karna dapat terhubung ke WhatsApp.
+5. Pengguna akan datang kembali untuk melakukan pemesanan lainnya.
+<br><br>
 
 ## Dokumentasi Website
 Dokumentasi dari web yang sudah dibuat:
 
-HALAMAN UNTUK USER
+HALAMAN UNTUK PELANGGAN
 1. Tampilan awal web
    ![Screenshot (941)](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/0c0b7d0e-1710-4d88-a33d-28011a258d36)
    Disini tab browser tampil dengan icon berinisial DI.
@@ -48,7 +49,18 @@ HALAMAN UNTUK USER
    Pelanggan dapat memilih pesanan yang ada dan harga akan otomatis muncul.
    Data Pesanan langsung masuk ke database.
 
+7. Halaman Konfirmasi Pesanan
+   ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/46fe174c-3a89-451c-a3da-4a33516a71a1)
+   Halaman ini tampil setelah berhasil memesan paket.
 
+8. Halaman Menuju Chat WhatsApp
+   ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/1828836b-2fdf-402e-985f-3bf3c07c93a7)
+   Halaman ini tampil setelah klik Contact via WhatsApp.
+
+9. Halaman Chat WhatsApp
+    ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/01e93236-391a-4d38-8a12-a6a7c9bdfbfa)
+   Akan ada pesan yang bisa langsung dikirim untuk mulai berkomunikasi dengan Admin pada nomor tercantum.
+<br><br>
 
 HALAMAN ADMIN
 1. Halaman login khusus admin
@@ -76,7 +88,7 @@ HALAMAN ADMIN
    ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/04b2efde-a5d6-4f58-a443-2ccee93a2f54)
    Menampilkan seluruh pesanan yang masuk beserta informasi pendukung seperti waktu pemesanan.
    Pada bagian status pesanan juga dapat di update oleh admin antara: pending, diproses dan selesai.
-
+<br><br>
 
 ## Tech Stack
 Technology stack merujuk pada kombinasi dari teknologi perangkat lunak dan perangkat keras 
@@ -98,7 +110,7 @@ Berikut adalah beberapa tech stack yang diterapkan:
 
 5. Code Editor atau IDE
    Code editor: Visual Studio Code.
-
+<br><br>
 
 ## Instruksi Konfigurasi
 Langkah 1: Konfigurasi dbconfig.php
@@ -109,12 +121,11 @@ Langkah 2: Eksekusi db.sql
 - Buka MySQL Command Line atau MySQL Workbench.
 - Jalankan perintah SQL untuk membuat database dan tabel-tabel yang diinginkan.
 - Pastikan untuk menjalankan perintah SQL dengan format yang tepat.
-
+<br><br>
 
 ## Instruksi Penggunaan Website
 
 UNTUK PELANGGAN
-
 1. Pilih Register setelah berhasil masuk halaman utama web
    ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/d4fe7a50-dd78-4c19-9337-559acaa18f02)
    Dapat dengan klik menu register.
@@ -125,29 +136,42 @@ UNTUK PELANGGAN
 3. Masukkan email dan password saat diarahkan ke laman login, klik Login
    ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/8f524940-bab7-4018-bc49-0c6a8a42779d)
 
-4. Buat pesana dengan pilih paket sesuai dengan informasi pilihan paket yang tersedia di halaman utama web
+4. Buat pesanan dengan pilih paket sesuai dengan informasi pilihan paket yang tersedia di halaman utama web
    ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/d87095d2-8545-4749-a716-c0f87f1f3e97)
-   Saat memilih nama paket, nominal harga akan langsung keluar, silakan tambahkan note bila ada dan klik Buat Pesanan
+   Saat memilih nama paket, nominal harga akan langsung keluar, silakan tambahkan note bila ada dan klik Buat Pesanan.
 
+5. Lanjut menuju WhatsApp
+   ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/96f94fa3-df97-4c5d-a27e-b21b509b77f1)
+   Klik Chat via WhatsApp.
+
+6. Pilih Continue to Chat
+   ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/1428ef88-374b-4eda-b63b-ae5149ab67b3)
+
+7. Komunikasi dengan admin tentang pesanan yang dibuat <br>
+![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/b3f3ccde-e05f-42ec-bf39-9272b3622a37)
+
+   
+
+<br><br>
 
 UNTUK ADMIN
-1. Akses link untuk login admin dan lakukan login
+1. Akses link untuk login admin dan lakukan login <br>
    ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/2a66e314-441b-4ac5-9d90-6a66e279cb32)
 
-2. Monitoring halaman admin
+2. Monitoring halaman admin <br>
    ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/fec2ba1d-0034-41f2-a8be-dc6a69930b2a)
 
-3. Pilih data yang ingin dilihat
+3. Pilih data yang ingin dilihat <br>
    ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/b9fe9b31-7d14-45cb-953b-3c9ea9098fe4)
 
-4. Ubah status pesanan sesuai situasi yang berlangsung dengan klik dan pilih pada list yang bisa dipilih
+4. Ubah status pesanan sesuai situasi yang berlangsung dengan klik dan pilih pada list yang bisa dipilih <br>
    ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/12ea9350-c92d-48bd-ba36-e9a172776c49)
 
-5. Logout setelah selesai
+5. Logout setelah selesai <br>
    ![image](https://github.com/KadekMutiaSari/digital-invitation/assets/146809764/9d3a8185-34f8-4579-9c4f-834568bfb7a0)
 
 6. Dibawa kembali pada laman utama web
-
+<br><br>
 
 ## Responsifitas
 Halaman Utama Web
