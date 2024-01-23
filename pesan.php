@@ -90,7 +90,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label for="note_pesanan">Note Pesanan:</label><br>
             <textarea name="note_pesanan" id="note_pesanan" rows="4" cols="50"></textarea>
             <br><br>
-            <input type="submit" value="Buat Pesanan">
+            <input type="submit" name= 'submit_pesanan' value="Buat Pesanan">
         </form>
     </div>
 </body>
