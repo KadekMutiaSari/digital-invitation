@@ -1,15 +1,8 @@
 <?php
 session_start();
 
-// Memastikan bahwa ada informasi pesanan yang disimpan di sesi
-if (!isset($_SESSION['pesanan'])) {
-    header("Location: pesan.php");
-    exit();
-}
-
-// Mendapatkan informasi pesanan dari sesi
-$pesanan = $_SESSION['pesanan'];
-unset($_SESSION['pesanan']); // Hapus informasi pesanan dari sesi setelah ditampilkan
+// Inisialisasi $pesanan dengan nilai default jika belum ada
+$pesanan = isset($_SESSION['pesanan']) ? $_SESSION['pesanan'] : array('paket' => 'Paket Default');
 
 // Nomor WhatsApp untuk dihubungi
 $nomor_whatsapp = '6289524655346';
@@ -33,7 +26,7 @@ $nomor_whatsapp = '6289524655346';
         <p>Nomor WhatsApp: <?php echo $nomor_whatsapp; ?></p>
 
         <a href="https://wa.me/<?php echo $nomor_whatsapp; ?>?text=Halo,%20saya%20telah%20melakukan%20pemesanan%20(<?php echo $pesanan['paket']; ?>)%20dan%20saya%20menginginkan%20info%20lebih%20lanjut." target="_blank">
-            <button>Contact via WhatsApp</button>
+            Contact via WhatsApp
         </a><br>
     </div>
 
